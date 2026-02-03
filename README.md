@@ -107,12 +107,18 @@ python VISTA-Bench/VLMEvalKit/utils/convert_data_file.py   --in   VISTA-Bench/VI
 
 **Pure-text:**
 ```bash
-python run.py   --data VISTA-Bench   --model llava_v1.5_7b   --verbose
+python run.py \
+  --data VISTA-Bench \
+  --model llava_v1.5_7b \
+  --verbose
 ```
 
 **Visualized-text (VT):**
 ```bash
-python run.py   --data VISTA-Bench-VT   --model llava_v1.5_7b   --verbose
+python run.py \
+  --data VISTA-Bench-VT \
+  --model llava_v1.5_7b \
+  --verbose
 ```
 
 ---
