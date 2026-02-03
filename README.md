@@ -145,7 +145,7 @@ python run.py \
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Multimodal</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Unimodal</th>
       <th colspan="2" rowspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Overall</th>
-      <th rowspan="3" style="border:1px solid #cfd7e3; padding:10px; text-align:center; width:7%;">↓ Gap</th>
+      <th rowspan="3" style="border:1px solid #cfd7e3; padding:10px; text-align:center; width:10%;">↓ Gap</th>
     </tr>
     <tr>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Perception</th>
