@@ -145,7 +145,7 @@ python run.py \
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Multimodal</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Unimodal</th>
       <th colspan="2" rowspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Overall</th>
-      <th rowspan="3" style="border:1px solid #cfd7e3; padding:10px; text-align:center; width:15%;">↓ Gap</th>
+      <th rowspan="3" style="border:1px solid #cfd7e3; padding:10px; text-align:center; width:7%;">↓ Gap</th>
     </tr>
     <tr>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Perception</th>
@@ -185,7 +185,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">41.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">31.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">43.1</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓ -11.4</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓-11.4</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-2B-Instruct</td>
@@ -199,7 +199,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">52.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">33.9</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">47.5</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e6b6b6; color:#c80000; font-weight:600;">↓ -13.6</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e6b6b6; color:#c80000; font-weight:600;">↓-13.6</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2-2B</td>
@@ -213,7 +213,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">50.2</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">38.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">48.9</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eac8c8; color:#c80000; font-weight:600;">↓ -10.1</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eac8c8; color:#c80000; font-weight:600;">↓-10.1</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">NEO-2B-SFT</td>
@@ -227,7 +227,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">53.4</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">30.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">51.3</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#d89a9a; color:#c80000; font-weight:600;">↓ -20.5</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#d89a9a; color:#c80000; font-weight:600;">↓-20.5</td>
     </tr>
     <tr style="background:#ffffff; color:#5a5a5a;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen2.5-VL-3B-Instruct</td>
@@ -241,7 +241,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">56.6</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>48.6</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">52.8</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f0e0e0; color:#c80000; font-weight:600;">↓ -4.2</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f0e0e0; color:#c80000; font-weight:600;">↓-4.2</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-2B</td>
@@ -255,7 +255,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>57.0</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">42.1</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">52.9</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓ -10.8</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓-10.8</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">SAIL-VL2-2B</td>
@@ -269,7 +269,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">54.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">45.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>54.1</u></td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#edd0d0; color:#c80000; font-weight:600;">↓ -8.4</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#edd0d0; color:#c80000; font-weight:600;">↓-8.4</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2.5-2B</td>
@@ -283,7 +283,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>60.0</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>48.5</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>56.1</strong></td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eed3d3; color:#c80000; font-weight:600;">↓ -7.6</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eed3d3; color:#c80000; font-weight:600;">↓-7.6</td>
     </tr>
     <!-- ===== Group: 8B ===== -->
     <tr>
@@ -303,7 +303,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">48.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">27.1</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">44.1</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e0aaaa; color:#c80000; font-weight:600;">↓ -17.0</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e0aaaa; color:#c80000; font-weight:600;">↓-17.0</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-OneVision-7B</td>
@@ -317,7 +317,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">58.6</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">27.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">53.4</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#cf8f8f; color:#c80000; font-weight:600;">↓ -25.6</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#cf8f8f; color:#c80000; font-weight:600;">↓-25.6</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen2.5-VL-7B-Instruct</td>
@@ -331,7 +331,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">62.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">51.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">53.7</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f6f0f0; color:#c80000; font-weight:600;">↓ -2.0</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f6f0f0; color:#c80000; font-weight:600;">↓-2.0</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiniCPM-V-4\_5</td>
@@ -345,7 +345,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">55.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">47.2</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">54.3</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eed4d4; color:#c80000; font-weight:600;">↓ -7.1</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eed4d4; color:#c80000; font-weight:600;">↓-7.1</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-8B-Instruct</td>
@@ -359,7 +359,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">68.2</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">52.1</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">57.9</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f0dddd; color:#c80000; font-weight:600;">↓ -5.8</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f0dddd; color:#c80000; font-weight:600;">↓-5.8</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2-8B</td>
@@ -373,7 +373,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">65.4</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">47.5</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">58.6</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8c5c5; color:#c80000; font-weight:600;">↓ -11.1</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8c5c5; color:#c80000; font-weight:600;">↓-11.1</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-8B</td>
@@ -387,7 +387,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">71.2</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">50.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">58.9</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓ -8.9</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓-8.9</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiMo-VL-7B-RL</td>
@@ -401,7 +401,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">68.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">59.5</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">59.2</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9f2ec; color:#009900; font-weight:700;">↑ +0.3</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9f2ec; color:#009900; font-weight:700;">↑+0.3</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">NEO-9B-SFT</td>
@@ -415,7 +415,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">69.2</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">28.5</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">59.3</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#c77f7f; color:#c80000; font-weight:700;">↓ -30.8</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#c77f7f; color:#c80000; font-weight:700;">↓-30.8</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-OneVision-1.5-8B</td>
@@ -429,7 +429,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">67.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">49.9</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">59.5</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ebcdcd; color:#c80000; font-weight:600;">↓ -9.6</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ebcdcd; color:#c80000; font-weight:600;">↓-9.6</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiMo-VL-7B-SFT</td>
@@ -443,7 +443,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">72.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>60.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">61.3</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#fbf7f7; color:#c80000; font-weight:600;">↓ -1.0</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#fbf7f7; color:#c80000; font-weight:600;">↓-1.0</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">SAIL-VL2-8B</td>
@@ -457,7 +457,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">71.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">54.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">61.7</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#edd0d0; color:#c80000; font-weight:600;">↓ -7.7</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#edd0d0; color:#c80000; font-weight:600;">↓-7.7</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2.5-9B</td>
@@ -471,7 +471,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>73.8</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">57.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>65.3</u></td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓ -8.0</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓-8.0</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">GLM-4.1V-9B-Thinking</td>
@@ -485,7 +485,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>75.8</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>63.8</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>65.9</strong></td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f6f0f0; color:#c80000; font-weight:600;">↓ -2.1</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f6f0f0; color:#c80000; font-weight:600;">↓-2.1</td>
     </tr>
     <!-- ===== Group: 30B-A3B ===== -->
     <tr>
@@ -505,7 +505,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">66.4</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">49.4</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">57.6</td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓ -8.2</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓-8.2</td>
     </tr>
     <tr style="background:#f7f9fb;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-30B-A3B-Instruct</td>
@@ -519,7 +519,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>71.0</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>49.9</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>61.6</u></td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8c5c5; color:#c80000; font-weight:600;">↓ -11.7</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8c5c5; color:#c80000; font-weight:600;">↓-11.7</td>
     </tr>
     <tr style="background:#ffffff;">
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-30B-A3B</td>
@@ -533,7 +533,7 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>75.2</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>54.4</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>64.9</strong></td>
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓ -10.5</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓-10.5</td>
     </tr>
   </tbody>
 </table>
