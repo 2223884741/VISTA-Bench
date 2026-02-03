@@ -544,7 +544,7 @@ python run.py \
 <p style="margin-top:8px; color:#555;">
   <em>
     Caption: Comparison of different VLMs on our benchmark. Results are reported under <strong>Visualized Text (VT)</strong> and <strong>Text</strong> inputs for each metric.
-    <strong>Text</strong> cells are shaded in light gray. The <strong>best</strong> result per column is bolded and the <u>second best</u> is underlined.
+    The <strong>best</strong> result per column is bolded.
     The ↓Gap column denotes the overall performance drop when switching from Text to Visualized Text. All metrics are reported as percentages (%).
   </em>
 </p>
