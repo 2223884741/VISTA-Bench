@@ -128,6 +128,7 @@ python run.py \
 
 ## Results
 
+<div align="center">
 <table style="width:100%; border-collapse:collapse; font-size:14px; line-height:1.25;">
   <thead>
     <tr>
@@ -135,44 +136,34 @@ python run.py \
         Modality Comparison (VT vs. Text)
       </th>
     </tr>
-
     <tr>
       <th rowspan="3" style="border:1px solid #cfd7e3; padding:10px; text-align:left; width:28%;">Model</th>
-
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Multimodal</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Multimodal</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Multimodal</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Unimodal</th>
       <th colspan="2" rowspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Overall</th>
-
       <th rowspan="3" style="border:1px solid #cfd7e3; padding:10px; text-align:center; width:7%;">↓ Gap</th>
     </tr>
-
     <tr>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Perception</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Reasoning</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Knowledge</th>
       <th colspan="2" style="border:1px solid #cfd7e3; padding:10px; text-align:center;">Knowledge</th>
     </tr>
-
     <tr>
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center;">VT</th>
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">Text</th>
-
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center;">VT</th>
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">Text</th>
-
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center;">VT</th>
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">Text</th>
-
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center;">VT</th>
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">Text</th>
-
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center;">VT</th>
       <th style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">Text</th>
     </tr>
   </thead>
-
   <tbody>
     <!-- ===== Group: 2B ===== -->
     <tr>
@@ -180,9 +171,8 @@ python run.py \
         ▼ Vision-Language Models (2B)
       </td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">DeepSeek-VL2-Tiny~\cite{wu2024deepseek}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">DeepSeek-VL2-Tiny</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">44.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">64.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">31.3</td>
@@ -195,9 +185,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">43.1</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓ -11.4</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-2B-Instruct~\cite{bai2025qwen3vltechnicalreport}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-2B-Instruct</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">51.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>69.0</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">32.7</td>
@@ -210,9 +199,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">47.5</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e6b6b6; color:#c80000; font-weight:600;">↓ -13.6</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2-2B~\cite{lu2024ovis}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2-2B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">58.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">66.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">39.7</td>
@@ -225,9 +213,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">48.9</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eac8c8; color:#c80000; font-weight:600;">↓ -10.1</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">NEO-2B-SFT~\cite{diao2025pixels}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">NEO-2B-SFT</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">40.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">68.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">31.3</td>
@@ -240,9 +227,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">51.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#d89a9a; color:#c80000; font-weight:600;">↓ -20.5</td>
     </tr>
-
     <tr style="background:#ffffff; color:#5a5a5a;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen2.5-VL-3B-Instruct~\cite{bai2025qwen2}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen2.5-VL-3B-Instruct</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">65.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">67.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">43.3</td>
@@ -255,9 +241,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">52.8</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f0e0e0; color:#c80000; font-weight:600;">↓ -4.2</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-2B~\cite{wang2025internvl3}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-2B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">56.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">66.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">39.3</td>
@@ -270,9 +255,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">52.9</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9c3c3; color:#c80000; font-weight:600;">↓ -10.8</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">SAIL-VL2-2B~\cite{yin2025sail}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">SAIL-VL2-2B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>65.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>69.7</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>47.3</u></td>
@@ -285,9 +269,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>54.1</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#edd0d0; color:#c80000; font-weight:600;">↓ -8.4</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2.5-2B~\cite{lu2025ovis2}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2.5-2B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>66.3</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>69.7</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>51.7</strong></td>
@@ -300,16 +283,14 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>56.1</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eed3d3; color:#c80000; font-weight:600;">↓ -7.6</td>
     </tr>
-
     <!-- ===== Group: 8B ===== -->
     <tr>
       <td colspan="12" style="border:1px solid #cfd7e3; padding:10px; background:#ebf5ff; font-weight:700;">
         ▼ Vision-Language Models (8B)
       </td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-1.5-7B~\cite{liu2024improved}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-1.5-7B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">33.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">58.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">27.3</td>
@@ -322,9 +303,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">44.1</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e0aaaa; color:#c80000; font-weight:600;">↓ -17.0</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-OneVision-7B~\cite{li2024llava}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-OneVision-7B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">40.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">66.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">27.0</td>
@@ -337,9 +317,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">53.4</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#cf8f8f; color:#c80000; font-weight:600;">↓ -25.6</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen2.5-VL-7B-Instruct~\cite{bai2025qwen2}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen2.5-VL-7B-Instruct</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">65.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">65.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">52.7</td>
@@ -352,9 +331,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">53.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f6f0f0; color:#c80000; font-weight:600;">↓ -2.0</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiniCPM-V-4\_5~\cite{yu2025minicpm}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiniCPM-V-4\_5</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">64.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>71.6</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">45.7</td>
@@ -367,9 +345,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">54.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#eed4d4; color:#c80000; font-weight:600;">↓ -7.1</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-8B-Instruct~\cite{bai2025qwen3vltechnicalreport}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-8B-Instruct</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">65.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">67.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">49.0</td>
@@ -382,9 +359,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">57.9</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f0dddd; color:#c80000; font-weight:600;">↓ -5.8</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2-8B~\cite{lu2024ovis}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2-8B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">66.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">71.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">47.7</td>
@@ -397,9 +373,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">58.6</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8c5c5; color:#c80000; font-weight:600;">↓ -11.1</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-8B~\cite{wang2025internvl3}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-8B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">61.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">64.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">45.7</td>
@@ -412,9 +387,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">58.9</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓ -8.9</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiMo-VL-7B-RL~\cite{coreteam2025mimovltechnicalreport}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiMo-VL-7B-RL</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>70.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">69.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">58.3</td>
@@ -427,9 +401,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">59.2</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e9f2ec; color:#009900; font-weight:700;">↑ +0.3</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">NEO-9B-SFT~\cite{diao2025pixels}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">NEO-9B-SFT</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">32.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">69.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">29.0</td>
@@ -442,9 +415,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">59.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#c77f7f; color:#c80000; font-weight:700;">↓ -30.8</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-OneVision-1.5-8B~\cite{an2025llava}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">LLaVA-OneVision-1.5-8B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">62.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">68.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">46.3</td>
@@ -457,9 +429,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">59.5</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ebcdcd; color:#c80000; font-weight:600;">↓ -9.6</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiMo-VL-7B-SFT~\cite{coreteam2025mimovltechnicalreport}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">MiMo-VL-7B-SFT</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">68.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">69.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>61.3</strong></td>
@@ -472,9 +443,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">61.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#fbf7f7; color:#c80000; font-weight:600;">↓ -1.0</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">SAIL-VL2-8B~\cite{yin2025sail}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">SAIL-VL2-8B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">68.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">70.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">54.3</td>
@@ -487,9 +457,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">61.7</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#edd0d0; color:#c80000; font-weight:600;">↓ -7.7</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2.5-9B~\cite{lu2025ovis2}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Ovis2.5-9B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">68.3</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">69.0</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">56.3</td>
@@ -502,9 +471,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>65.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓ -8.0</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">GLM-4.1V-9B-Thinking~\cite{hong2025glm}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">GLM-4.1V-9B-Thinking</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>70.7</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>71.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>58.7</u></td>
@@ -517,16 +485,14 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>65.9</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#f6f0f0; color:#c80000; font-weight:600;">↓ -2.1</td>
     </tr>
-
     <!-- ===== Group: 30B-A3B ===== -->
     <tr>
       <td colspan="12" style="border:1px solid #cfd7e3; padding:10px; background:#ebf5ff; font-weight:700;">
         ▼ Vision-Language Models (30B-A3B)
       </td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Kimi-VL-A3B-Thinking~\cite{team2025kimi}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Kimi-VL-A3B-Thinking</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>69.0</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>71.0</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;">49.7</td>
@@ -539,9 +505,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;">57.6</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#ecd0d0; color:#c80000; font-weight:600;">↓ -8.2</td>
     </tr>
-
     <tr style="background:#f7f9fb;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-30B-A3B-Instruct~\cite{bai2025qwen3vltechnicalreport}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">Qwen3-VL-30B-A3B-Instruct</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>64.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><strong>71.0</strong></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><strong>51.0</strong></td>
@@ -554,9 +519,8 @@ python run.py \
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>61.6</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8c5c5; color:#c80000; font-weight:600;">↓ -11.7</td>
     </tr>
-
     <tr style="background:#ffffff;">
-      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-30B-A3B~\cite{wang2025internvl3}</td>
+      <td style="border:1px solid #cfd7e3; padding:10px; text-align:left;">InternVL3.5-30B-A3B</td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>64.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center; background:#e8e8e8;"><u>70.3</u></td>
       <td style="border:1px solid #cfd7e3; padding:10px; text-align:center;"><u>50.3</u></td>
@@ -571,7 +535,6 @@ python run.py \
     </tr>
   </tbody>
 </table>
-
 <p style="margin-top:8px; color:#555;">
   <em>
     Caption: Comparison of different VLMs on our benchmark. Results are reported under <strong>Visualized Text (VT)</strong> and <strong>Text</strong> inputs for each metric.
@@ -579,11 +542,12 @@ python run.py \
     The ↓Gap column denotes the overall performance drop when switching from Text to Visualized Text. All metrics are reported as percentages (%).
   </em>
 </p>
+</div>
 
 ## Contact
 
-
-
+- Qing'an Liu
+- Juntong Feng
 
 ## Citation
 
