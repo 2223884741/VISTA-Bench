@@ -546,8 +546,8 @@ python run.py \
 
 ## Contact
 
-- Qing'an Liu
-- Juntong Feng
+- Qing'an Liu: <2223884741@mail.dlut.edu.cn>
+- Juntong Feng: <2253762636@mail.dlut.edu.cn>
 
 ## Citation
 
