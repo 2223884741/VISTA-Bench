@@ -55,6 +55,16 @@ We introduce **VISTA-Bench**, a systematic benchmark spanning multimodal percept
   <em>Figure 3: A representative multimodal perception case under the visualized-text interface.</em>
 </p>
 
+<p align="center">
+  <span style="display:flex; justify-content:center; gap:16px; width:500px; margin:0 auto;">
+    <img src="assets/figures/unimodal-knowledge-2.svg" style="width:50%; height:auto;" alt="VISTA-Bench uni-knowledge case">
+    <img src="assets/figures/multi-reasoning-2.svg" style="width:50%; height:auto;" alt="VISTA-Bench multi-reasoning case">
+  </span>
+</p>
+<p align="center">
+  <em>Figure 3: A representative multimodal perception case under the visualized-text interface.</em>
+</p>
+
 ---
 
 ## Repository structure
