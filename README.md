@@ -38,7 +38,7 @@ We introduce **VISTA-Bench**, a systematic benchmark spanning multimodal percept
   - **Multimodal Reasoning:** 300
 
 <p align="center">
-  <img src="assets/figures/ability_dimension.png" width="500" alt="VISTA-Bench ability dimensions">
+  <img src="assets/figures/ability_dimension.jpg" width="500" alt="VISTA-Bench ability dimensions">
 </p>
 <p align="center">
   <em>Figure 2: Ability dimensions and task taxonomy of VISTA-Bench.</em>
