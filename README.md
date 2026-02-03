@@ -105,7 +105,11 @@ What it does:
 Example:
 
 ```bash
-python VISTA-Bench/VLMEvalKit/utils/convert_data_file.py   --in   VISTA-Bench/VISTA-Bench.tsv   --out  VISTA-Bench/VISTA-Bench_norm.tsv   --image-prefix /ABS/PATH/TO/VISTA-Bench   --strip-token ""
+python VISTA-Bench/VLMEvalKit/utils/convert_data_file.py \
+  --in   VISTA-Bench/VISTA-Bench.tsv \
+  --out  VISTA-Bench/VISTA-Bench_norm.tsv \
+  --image-prefix /ABS/PATH/TO/VISTA-Bench \
+  --strip-token ""
 ```
 
 ### 2) Run evaluation
