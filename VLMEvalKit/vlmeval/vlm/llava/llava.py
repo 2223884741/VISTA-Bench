@@ -69,7 +69,6 @@ class LLaVA(BaseModel):
         """
         assert self.use_custom_prompt(dataset)
 
-        # dump_image 保持原来的调用方式
         tgt_path = self.dump_image(line, dataset)
 
         # question + hint
@@ -209,6 +208,7 @@ class LLaVA(BaseModel):
             return_tensors="pt",
             padding=True
         )
+
         inputs = {k: v.to("cuda") for k, v in inputs.items()}
 
         with torch.inference_mode():
@@ -216,7 +216,7 @@ class LLaVA(BaseModel):
                 **inputs,
                 **self.kwargs
             )
-        
+
         input_token_len = inputs["input_ids"].shape[1]
         generated_ids = output_ids[:, input_token_len:]
 
@@ -796,7 +796,9 @@ class LLaVA_OneVision_HF(BaseModel):
         ]
         prompt = self.processor.apply_chat_template(conversation, add_generation_prompt=True)
         #inputs = self.processor(images=images, text=prompt, return_tensors="pt").to('cuda', torch.float16)
-
+        # ---------------------------
+        # 核心修复：无图 → images=None
+        # ---------------------------
         if len(images) == 0:
             inputs = self.processor(
                 text=prompt,
@@ -884,6 +886,17 @@ class LLaVA_OneVision_HF(BaseModel):
             return self.generate_inner_image(message, dataset)
 
 class LLaVA_OneVision1_5_HF(BaseModel):
+    """
+    VLMEvalKit wrapper (HF-style) for:
+      lmms-lab/LLaVA-OneVision-1.5-8B-Instruct
+
+    Style aligns with your existing LLaVA_OneVision_HF:
+      - build content string with <image> placeholders
+      - conversation for image: [{"role":"user","content":[{"type":"text","text": content}]}]
+      - conversation for video: [{"role":"user","content":[{"type":"text","text": content},{"type":"video"}]}]
+      - processor(images/videos=..., text=prompt, return_tensors="pt")
+      - generate then slice off prompt tokens
+    """
 
     INSTALL_REQ = True
     INTERLEAVE = True
@@ -901,20 +914,24 @@ class LLaVA_OneVision1_5_HF(BaseModel):
         assert model_path is not None, "Model path must be provided."
         self.model_path = model_path
 
+        # generation / video settings (align with your HF onevision wrapper)
         self.video_kwargs = kwargs.get("video_kwargs", {})
         self.force_sample = self.video_kwargs.get("force_sample", False)
 
         self.max_num_frames = int(kwargs.get("max_num_frames", 32))
         self.fps = float(kwargs.get("fps", 1))
 
+        # pixels control (kept for compatibility; processor may ignore depending on model)
         self.min_pixels = int(kwargs.get("min_pixels", 256 * 28 * 28))
         self.max_pixels = int(kwargs.get("max_pixels", 1605632))
 
+        # prompt controls
         self.system_prompt = kwargs.get("system_prompt", "You are a helpful assistant.")
         self.reasoning_prompt = kwargs.get("reasoning_prompt", None)
         if self.reasoning_prompt is not None:
             self.reasoning_prompt = self.reasoning_prompt.replace("\\n", "\n")
 
+        # model / processor / tokenizer (trust_remote_code like lmms-eval)
         attn_impl = kwargs.get("attn_implementation", None)
         model_kwargs = dict(torch_dtype="auto", device_map=kwargs.get("device_map", "auto"), trust_remote_code=True)
         if attn_impl is not None:
@@ -922,6 +939,7 @@ class LLaVA_OneVision1_5_HF(BaseModel):
 
         self.model = AutoModelForCausalLM.from_pretrained(model_path, **model_kwargs).eval()
 
+        # processor: pass min/max_pixels if supported; ignore if not
         try:
             self.processor = AutoProcessor.from_pretrained(
                 model_path,
@@ -938,6 +956,9 @@ class LLaVA_OneVision1_5_HF(BaseModel):
 
         self.max_new_tokens = int(kwargs.get("max_new_tokens", 2048))
 
+    # -------------------------
+    # video loader (decord) — aligned with your onevision-HF style
+    # -------------------------
     def load_video(self, video_path, max_frames_num, fps=1, force_sample=False):
         from decord import VideoReader, cpu
         import numpy as np
@@ -954,6 +975,7 @@ class LLaVA_OneVision1_5_HF(BaseModel):
         effective_step = max(1, round(avg_fps / fps))
         frame_idx = list(range(0, total_frame_num, effective_step))
 
+        # 均匀采样到 max_frames_num（或强制采样），并确保最后一帧尽量包含
         if len(frame_idx) > max_frames_num or force_sample:
             frame_idx = np.linspace(0, total_frame_num - 1, max_frames_num, dtype=int).tolist()
         if (total_frame_num - 1) not in frame_idx:
@@ -967,8 +989,12 @@ class LLaVA_OneVision1_5_HF(BaseModel):
         video_time = total_frame_num / avg_fps
         return video_frames, frame_time_str, video_time
 
+    # -------------------------
+    # image generation (HF onevision style)
+    # -------------------------
     def generate_inner_image(self, message, dataset=None):
         images = []
+        # 修改点 1：构建符合 Processor 预期的数据结构
         user_content = []
 
         for msg in message:
@@ -977,9 +1003,11 @@ class LLaVA_OneVision1_5_HF(BaseModel):
             elif msg["type"] == "image":
                 img = Image.open(msg["value"]).convert("RGB")
                 images.append(img)
+                # 修改点 2：显式添加 image 类型，让模板自动处理 token
                 user_content.append({"type": "image"})
 
         if self.reasoning_prompt:
+            # 在最后一个文本框追加推理提示
             if user_content and user_content[-1]["type"] == "text":
                 user_content[-1]["text"] += self.reasoning_prompt
 
@@ -988,11 +1016,13 @@ class LLaVA_OneVision1_5_HF(BaseModel):
             {"role": "user", "content": user_content},
         ]
 
+        # 修改点 3：模板会自动插入特殊 token
         prompt = self.processor.apply_chat_template(conversation, add_generation_prompt=True)
 
         if len(images) == 0:
             inputs = self.processor(text=prompt, return_tensors="pt", padding=True)
         else:
+            # 必须传入 images，processor 才会根据文本里的占位符进行对齐
             inputs = self.processor(images=images, text=prompt, return_tensors="pt", padding=True)
 
         inputs = {k: (v.to("cuda") if torch.is_tensor(v) else v) for k, v in inputs.items()}
@@ -1005,6 +1035,9 @@ class LLaVA_OneVision1_5_HF(BaseModel):
         text = self.processor.batch_decode(gen_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
         return text.strip()
 
+    # -------------------------
+    # video generation (HF onevision style)
+    # -------------------------
     def generate_inner_video(self, message, dataset=None):
         text_content = ""
         videos = []
@@ -1015,6 +1048,7 @@ class LLaVA_OneVision1_5_HF(BaseModel):
                 text_content += msg["value"]
             elif msg["type"] == "video":
                 videos.append(msg["value"])
+                # 对齐你现有 onevision-HF：视频也用 <image>\n 做视觉占位
                 visual_content += self.DEFAULT_IMAGE_TOKEN + "\n"
 
         if len(videos) != 1:
