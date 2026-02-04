@@ -109,26 +109,36 @@ python VISTA-Bench/VLMEvalKit/utils/convert_data_file.py \
   --in   VISTA-Bench/VISTA-Bench.tsv \
   --out  VISTA-Bench/VISTA-Bench_norm.tsv \
   --image-prefix /ABS/PATH/TO/VISTA-Bench \
-  --strip-token ""
 ```
+
+- `--in`: input TSV path (the original dataset TSV to be converted)
+- `--out`: output TSV path (the converted/normalized TSV produced by this script)
+- `--image-prefix`: the dataset root directory where images/, questions/, and the TSV files are located (used to resolve relative paths)
+
+After conversion, rename the TSV column header `image` to `image-1` to avoid an AssertionError in some VLMEvalKit setups.
 
 ### 2) Run evaluation
 
 **Pure-text:**
 ```bash
-python run.py \
-  --data VISTA-Bench \
+python /VISTA-Bench/VLMEvalKit/run.py \
+  --data VISTA-Bench_norm \
   --model llava_v1.5_7b \
   --verbose
 ```
 
 **Visualized-text (VT):**
 ```bash
-python run.py \
+python /VISTA-Bench/VLMEvalKit/run.py \
   --data VISTA-Bench-VT \
   --model llava_v1.5_7b \
   --verbose
 ```
+
+- `--data`: the dataset name corresponding to your converted TSV (e.g., `VISTA-Bench_norm`). The VT split (`VISTA-Bench-VT`) should also be converted and can be run directly using this name because it is registered in `VLMEvalKit/vlmeval/dataset/image_mm_mcq.py` via `DATASET_URL/MD5`.
+- `--model`: the model name defined in `VLMEvalKit/vlmeval/config.py` (make sure the corresponding weights are available in your environment).
+- `--verbose`: print detailed logs during evaluation.
+- Outputs: the final report includes `overall` results and `l1-categories` breakdown.
 
 ---
 
