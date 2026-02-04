@@ -232,7 +232,7 @@ def convert_and_normalize_paths_and_rename(
         index=False,
         encoding="utf-8",
         lineterminator="\n",
-        quoting=csv.QUOTE_NONE,
+        quoting=csv.QUOTE_MINIMAL,
         escapechar="\\",  # 防守性设置
     )
 
