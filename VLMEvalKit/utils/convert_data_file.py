@@ -255,13 +255,13 @@ def main():
         description="Fix TSV paths & options; build image_path/question_image_path (multi-path -> bracket string); slice rows."
     )
     ap.add_argument("--in", dest="in_path",
-                    default="/root/LMUData/lqa/VLMEvalKit/resource/MMLU_custom/MMLU_custom_original_9.tsv")
+                    default="/VISTA-Bench/VISTA-Bench.tsv")
     ap.add_argument("--out", dest="out_path",
-                    default="/root/LMUData/lqa/VLMEvalKit/resource/MMLU_custom/MMLU_custom_9_t.tsv")
+                    default="/VISTA-Bench/VISTA-Bench_norm.tsv")
     ap.add_argument("--cols", nargs="*", default=None)
     ap.add_argument("--force-rename", action="store_true")
     ap.add_argument("--image-prefix",
-                    default="/root/LMUData/lqa/VLMEvalKit/resource/MMLU_custom/")
+                    default="/root/VISTA-Bench")
     ap.add_argument("--strip-token", default="")
     ap.add_argument("--limit", nargs=2, type=int, metavar=("START", "END"), default=None)
     args = ap.parse_args()
