@@ -796,9 +796,7 @@ class LLaVA_OneVision_HF(BaseModel):
         ]
         prompt = self.processor.apply_chat_template(conversation, add_generation_prompt=True)
         #inputs = self.processor(images=images, text=prompt, return_tensors="pt").to('cuda', torch.float16)
-        # ---------------------------
-        # 核心修复：无图 → images=None
-        # ---------------------------
+
         if len(images) == 0:
             inputs = self.processor(
                 text=prompt,
@@ -887,7 +885,7 @@ class LLaVA_OneVision_HF(BaseModel):
 
 class LLaVA_OneVision1_5_HF(BaseModel):
     """
-    VLMEvalKit wrapper (HF-style) for:
+    VLMEvalKit wrapper for:
       lmms-lab/LLaVA-OneVision-1.5-8B-Instruct
 
     Style aligns with existing LLaVA_OneVision_HF:
@@ -957,7 +955,7 @@ class LLaVA_OneVision1_5_HF(BaseModel):
         self.max_new_tokens = int(kwargs.get("max_new_tokens", 2048))
 
     # -------------------------
-    # video loader (decord) — aligned with your onevision-HF style
+    # video loader
     # -------------------------
     def load_video(self, video_path, max_frames_num, fps=1, force_sample=False):
         from decord import VideoReader, cpu
@@ -989,7 +987,7 @@ class LLaVA_OneVision1_5_HF(BaseModel):
         return video_frames, frame_time_str, video_time
 
     # -------------------------
-    # image generation (HF onevision style)
+    # image generation
     # -------------------------
     def generate_inner_image(self, message, dataset=None):
         images = []
